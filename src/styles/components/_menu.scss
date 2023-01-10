@@ -31,6 +31,10 @@
 
                 padding: 10px;
             }
+
+            &:nth-child(1) {
+                transform: scale(1.25);
+            }
             
             &:nth-child(1):hover {
                 transform: scale(1.5);
