@@ -1,7 +1,7 @@
 export default function SlytherinPage() {
 
     return (
-        <main>
+        <main className="slytherin-main">
             
         </main>
     )

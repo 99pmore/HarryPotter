@@ -1,7 +1,7 @@
 export default function HufflepuffPage() {
 
     return (
-        <main>
+        <main className="hufflepuff-main">
             
         </main>
     )

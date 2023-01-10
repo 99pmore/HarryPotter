@@ -1,7 +1,7 @@
 export default function RavenclawPage() {
 
     return (
-        <main>
+        <main className="ravenclaw-main">
             
         </main>
     )

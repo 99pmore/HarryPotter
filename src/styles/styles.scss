@@ -1,20 +1,23 @@
 // UI
 
-@use './base/mixins';
-@use './base/variables';
+@import './base/mixins';
+@import './base/variables';
 
 
 
 // COMPONENTS
 
-@use './components/menu';
+@import './components/menu';
 
 
 
 // PAGES
 
-@use './pages/home';
-@use './pages/gryffindorPage';
+@import './pages/home';
+@import './pages/gryffindorPage';
+@import './pages/slytherinPage';
+@import './pages/hufflepuffPage';
+@import './pages/ravenclawPage';
 
 
 
