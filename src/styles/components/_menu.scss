@@ -1,6 +1,8 @@
 .navbar-container {
-    width: 100%;
+    background: rgba(36, 36, 48, 0.75);
+    backdrop-filter: blur(4px);
 
+    width: 100%;
     padding: 20px;
 
     display: flex;
@@ -20,22 +22,6 @@
 
         li {
             transition: all 0.3s;
-
-            // &:nth-child(2):hover > * {
-            //     background-color: $gryffindor-red;
-            // }
-
-            // &:nth-child(3):hover > * {
-            //     background-color: $slytherin-green;
-            // }
-
-            // &:nth-child(4):hover > * {
-            //     background-color: $hufflepuff-yellow
-            // }
-
-            // &:nth-child(5):hover > * {
-            //     background-color: $ravenclaw-blue;
-            // }
 
             &:hover {
                 transform: scale(1.25);

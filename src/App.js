@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import Menu from "./components/Menu";
 import Home from "./pages/Home";
-import GryffindorPage from "./pages/GryffindorPage";
-import SlytherinPage from "./pages/SlytherinPage";
-import HufflepuffPage from "./pages/HufflepuffPage";
-import RavenclawPage from "./pages/RavenclawPage";
+import {GryffindorPage} from "./pages/GryffindorPage";
+import {SlytherinPage} from "./pages/SlytherinPage";
+import {HufflepuffPage} from "./pages/HufflepuffPage";
+import {RavenclawPage} from "./pages/RavenclawPage";
 
 const NoMatch = () => <h1>Not Found</h1>;
 
