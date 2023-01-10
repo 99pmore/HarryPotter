@@ -3,7 +3,7 @@
     backdrop-filter: blur(4px);
 
     width: 100%;
-    padding: 20px;
+    padding: 20px 80px;
 
     display: flex;
     justify-content: center;
@@ -13,47 +13,64 @@
     top: 0;
     z-index: 200;
 
-    ul {
+    .links {
         width: 100%;
         list-style: none;
 
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
 
-        li {
+        .home {
             transition: all 0.3s;
 
             a {
                 color: white;
-                font-size: 1.1rem;
-                text-decoration: none;
-
                 padding: 10px;
             }
 
             &:nth-child(1) {
                 transform: scale(1.25);
-            }
-            
-            &:nth-child(1):hover {
-                transform: scale(1.5);
-            }
 
-            &:nth-child(2) {
-                @include underline($gryffindor-red);
+                &:hover {
+                    transform: scale(1.5);
+                }
             }
+        }
 
-            &:nth-child(3) {
-                @include underline($slytherin-green);
-            }
+        .houses {
+            width: 50%;
+            list-style: none;
+    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
 
-            &:nth-child(4) {
-                @include underline($hufflepuff-yellow);
-            }
+            li {
+                a {
+                    color: white;
+                    font-size: 1.1rem;
+                    text-decoration: none;
+    
+                    padding: 10px;
+                }
 
-            &:nth-child(5) {
-                @include underline($ravenclaw-blue);
+                &:nth-child(1) {
+                    @include underline($gryffindor-red);
+                }
+    
+                &:nth-child(2) {
+                    @include underline($slytherin-green);
+                }
+    
+                &:nth-child(3) {
+                    @include underline($hufflepuff-yellow);
+                }
+    
+                &:nth-child(4) {
+                    @include underline($ravenclaw-blue);
+                }
             }
         }
     }
