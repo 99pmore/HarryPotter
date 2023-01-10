@@ -1,14 +1,24 @@
 .character-card {
-    background: rgba(18, 18, 18, 0.25);
-    backdrop-filter: blur(4px);
+    background: rgba(250, 250, 250, 0.75);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 50px 50px -50px black;
 
-    width: 250px;
+    width: 280px;
     aspect-ratio: 2/3;
+    padding: 20px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    transition: all 0.3s;
+
+    &:hover {
+        transform: rotateX(30deg) rotateY(-15deg);
+        transform-style: preserve-3d;
+        box-shadow: 100px 100px 100px -100px black;
+    }
 
     .card-img {
         overflow: hidden;
@@ -23,7 +33,7 @@
             object-fit: cover;
             object-position: top;
 
-            transition: transform 0.3s;
+            transition: all 0.2s;
 
             &:hover {
                 transform: scale(1.1);
@@ -32,10 +42,11 @@
     }
 
     .card-info {
-        color: white;
+        font-weight: 500;
+        color: rgb(34, 34, 34);
 
         width: 100%;
         height: 25%;
-        padding: 20px;
+        padding: 20px 0;
     }
 }

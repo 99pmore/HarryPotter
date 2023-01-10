@@ -1,13 +1,17 @@
 .hufflepuff-main {
-    background: url(../../assets/houses/hufflepuff-yellow.webp) repeat center;
+    background: linear-gradient(rgba(34, 34, 41, 0.75), rgba(34, 34, 41, 0.75)), url(../../assets/houses/hufflepuff-yellow.webp) repeat center;
+    background-attachment: fixed;
 
     min-height: 100vh;
     width: 100%;
+    padding: 40px;
     padding-top: 100px;
 
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    justify-content: space-evenly;
     align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    gap: 40px;
+
+    perspective: 2000px;
 }
