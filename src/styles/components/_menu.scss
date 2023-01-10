@@ -66,6 +66,9 @@
     
                 &:nth-child(3) {
                     @include underline($hufflepuff-yellow);
+                    .hover-underline-animation:after {
+                        height: 1px;
+                    }
                 }
     
                 &:nth-child(4) {
