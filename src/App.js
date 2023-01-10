@@ -1,31 +1,28 @@
-import './App.css';
-import { Routes, Route, Outlet, Link } from "react-router-dom";
-import Menu from './components/Menu'
-import Home from './pages/Home'
+import { Routes, Route } from "react-router-dom";
+import Menu from "./components/Menu";
+import Home from "./pages/Home";
+import GryffindorPage from "./pages/GryffindorPage";
+import SlytherinPage from "./pages/SlytherinPage";
+import HufflepuffPage from "./pages/HufflepuffPage";
+import RavenclawPage from "./pages/RavenclawPage";
 
-const NoMatch = () => <h1>Not Found</h1>
+const NoMatch = () => <h1>Not Found</h1>;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <Menu />
-        <h1>Harry Potter</h1>
-      </header>
-      <Routes>
-        <Route path="/" element={<Menu />}>
-          <Route index element={<Home />} />
-          {/* <Route path="about" element={< />} />
-          <Route path="dashboard" element={< />} /> */}
-
-          {/* Using path="*"" means "match anything", so this route
-                acts like a catch-all for URLs that we don't have explicit
-                routes for. */}
-          <Route path="*" element={<NoMatch />} />
-        </Route>
-      </Routes>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Routes>
+                <Route path="/" element={<Menu />}>
+                    <Route index element={<Home />} />
+                    <Route path="Gryffindor" element={<GryffindorPage />} />
+                    <Route path="Slytherin" element={<SlytherinPage />} />
+                    <Route path="Hufflepuff" element={<HufflepuffPage />} />
+                    <Route path="Ravenclaw" element={<RavenclawPage />} />
+                    <Route path="*" element={<NoMatch />} />
+                </Route>
+            </Routes>
+        </div>
+    );
 }
 
 export default App;

@@ -3,6 +3,24 @@
 @use './base/mixins';
 @use './base/variables';
 
+
+
 // COMPONENTS
 
 @use './components/menu';
+
+
+
+// PAGES
+
+@use './pages/home';
+@use './pages/gryffindorPage';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,21 @@
+.navbar-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        width: 100%;
+        list-style: none;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li > * {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
