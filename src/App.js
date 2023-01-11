@@ -19,7 +19,7 @@ function App() {
                     <Route path="Slytherin" element={<SlytherinPage />} />
                     <Route path="Hufflepuff" element={<HufflepuffPage />} />
                     <Route path="Ravenclaw" element={<RavenclawPage />} />
-                    <Route path="character" element={<CharacterInfo />} />
+                    <Route path="characters/:name" element={<CharacterInfo />} />
                     <Route path="*" element={<NoMatch />} />
                 </Route>
             </Routes>
