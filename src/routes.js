@@ -28,6 +28,6 @@ export const routes = [
     },
     {
         path: 'characters/:name',
-        element: (props) => <CharacterInfo {...props} />
+        element: <CharacterInfo />
     }
 ]
