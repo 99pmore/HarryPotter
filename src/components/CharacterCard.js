@@ -5,7 +5,7 @@ export const CharacterCard = ({ character }) => {
     const navigate = useNavigate();
 
     const toCharacter = () => {
-        navigate('/characters/${ character.name }', { state: { character } })
+        navigate(`/characters/${character.name}`, { state: { character } })
     }
 
     return (
