@@ -1,28 +1,13 @@
-import { Routes, Route } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
+import { routes } from "./routes";
 import Menu from "./components/Menu";
-import Home from "./pages/Home";
-import { GryffindorPage } from "./pages/GryffindorPage";
-import { SlytherinPage } from "./pages/SlytherinPage";
-import { HufflepuffPage } from "./pages/HufflepuffPage";
-import { RavenclawPage } from "./pages/RavenclawPage";
-import { CharacterInfo } from "./pages/CharacterInfo";
-
-const NoMatch = () => <h1>Not Found</h1>;
 
 function App() {
+
     return (
         <div className="App">
-            <Routes>
-                <Route path="/" element={<Menu />}>
-                    <Route index element={<Home />} />
-                    <Route path="Gryffindor" element={<GryffindorPage />} />
-                    <Route path="Slytherin" element={<SlytherinPage />} />
-                    <Route path="Hufflepuff" element={<HufflepuffPage />} />
-                    <Route path="Ravenclaw" element={<RavenclawPage />} />
-                    <Route path="characters/:name" element={<CharacterInfo />} />
-                    <Route path="*" element={<NoMatch />} />
-                </Route>
-            </Routes>
+            <Menu />
+            { useRoutes(routes) }
         </div>
     );
 }
