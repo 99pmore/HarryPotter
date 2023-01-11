@@ -1,4 +1,6 @@
 .character-info {
+    background: linear-gradient(rgba(34, 34, 41, 0.9), rgba(34, 34, 41, 0.9)),
+    url(../../assets/hogwarts.webp) no-repeat center / cover;
     color: white;
 
     min-height: 100vh;
@@ -11,7 +13,10 @@
     gap: 100px;
 
     .wrapper {
-        width: 100%;
+        background: linear-gradient(rgba(34, 34, 41, 0.5), rgba(34, 34, 41, 0.5)), url(../../assets/envelope-blur.webp) no-repeat center / cover;
+        box-shadow: 0 50px 50px -50px black;
+        
+        padding: 40px;
 
         display: flex;
         justify-content: center;
@@ -20,6 +25,7 @@
 
         .img-container {
             width: 300px;
+            height: 100%;
     
             img {
                 width: 100%;
@@ -42,26 +48,7 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: flex-start;
-                flex-direction: column;
-                gap: 40px;
-            }
-        }
-    
-        .wand {
-            height: 100%;
-    
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
-            gap: 100px;
-    
-            .wand-info {
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
-                flex-direction: column;
-                gap: 40px;
+                gap: 60px;
             }
         }
     }
