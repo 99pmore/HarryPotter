@@ -13,7 +13,11 @@ export const CharacterInfo = () => {
             <div className="info-container">
                 <h2>{ character.name }</h2>
                 <div className="info">
+                    <p>House: { character.house }</p>
                     <p>Birthday: { character.dateOfBirth }</p>
+                    <p>Gender: { character.gender }</p>
+                    <p>Specie: { character.species }</p>
+                    <p>Ancestry: { character.ancestry }</p>
                 </div>
             </div>
         </main>
