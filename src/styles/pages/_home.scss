@@ -8,4 +8,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) {
+    .home-main {
+        img {
+            width: 50%;
+        }
+    }
 }

@@ -1,6 +1,6 @@
 import logo from '../assets/hp-title.webp'
 
-export default function Home() {
+export const Home = () => {
 
     return (
         <main className="home-main">
