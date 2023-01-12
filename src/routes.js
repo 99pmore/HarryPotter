@@ -1,4 +1,4 @@
-import Home from "./pages/Home";
+import { Home } from "./pages/Home";
 import { GryffindorPage } from "./pages/GryffindorPage";
 import { SlytherinPage } from "./pages/SlytherinPage";
 import { HufflepuffPage } from "./pages/HufflepuffPage";
