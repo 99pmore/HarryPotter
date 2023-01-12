@@ -39,13 +39,12 @@
         }
 
         .houses {
-            width: 50%;
             list-style: none;
     
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 30px;
+            gap: 40px;
 
             li {
                 a {
